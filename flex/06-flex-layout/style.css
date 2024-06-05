@@ -5,6 +5,18 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #5f5f5f;
+}
+
+li {
+  list-style-type: none;
 }
 
 img {
@@ -16,6 +28,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 5px 15px;
 }
 
 input {
@@ -23,4 +36,70 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+
+.header > .left-links, .header > .right-links {
+  display: flex;
+  flex: 1 1 auto;
+  list-style-type: none;
+  gap: 15px;
+  
+}
+
+.header > .left-links {
+  justify-content: flex-start;
+  padding: 0px;
+  margin: 0;
+}
+
+.header > .right-links {
+  justify-content: flex-end;
+  padding: 0px;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 auto;
+  justify-content: center;
+}
+
+.content > .buttons {
+  padding: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  background-color: #eeeeee;
+}
+
+.footer > .left-links, .footer > .right-links {
+  display: flex;
+  flex: 1 1 auto;
+  list-style-type: none;
+  gap: 15px;
+}
+
+.footer > .left-links {
+  justify-content: flex-start;
+  padding: 0px;
+  margin: 0;
+}
+
+.footer > .right-links {
+  justify-content: flex-end;
+  padding: 0px;
+  margin: 0;
 }
